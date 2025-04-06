@@ -4,10 +4,41 @@
     <meta charset="UTF-8">
     <title>Robert B. Hodgkiss - Resume</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 40px; max-width: 800px; }
-        h1 { color: #magenta; }
-        h2 { color: #333; }
-        ul { list-style-type: disc; margin-left: 20px; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            max-width: 800px;
+        }
+        h1 {
+            color: #magenta;
+        }
+        h2 {
+            color: #333;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        #readme-section {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-top: 20px;
+            background-color: #f9f9f9;
+        }
+        #toggle-readme {
+            background-color: #magenta;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+        #toggle-readme:hover {
+            background-color: #d81b60;
+        }
+        .hidden {
+            display: none;
+        }
     </style>
 </head>
 <body>
@@ -85,5 +116,44 @@
         <li>Learning Threat Intelligence</li>
         <li>Penetration Testing Essential Training</li>
     </ul>
+
+    <!-- README Section -->
+    <button id="toggle-readme">Show/Hide About This Resume</button>
+    <div id="readme-section" class="hidden">
+        <h2>About This Resume</h2>
+        <p>Welcome to my online resume! This site showcases my professional experience, education, and certifications, highlighting my skills in customer service, problem-solving, and multitasking—key strengths I’m bringing to my application for the Account Associate role at T-Mobile.</p>
+
+        <h3>View My Resume</h3>
+        <ul>
+            <li><strong>Live Site</strong>: <a href="https://robert-hodgkiss.github.io">https://robert-hodgkiss.github.io</a></li>
+            <li><strong>Download PDF</strong>: Use your browser’s “Print to PDF” option (Ctrl+P or Cmd+P) to save a copy.</li>
+        </ul>
+
+        <h3>About Me</h3>
+        <p>I’m an enthusiastic professional with over 3 years of customer service experience, skilled in delivering timely solutions and building client loyalty. I’m bilingual in English and Spanish, adept at multitasking with multiple systems, and eager to contribute to T-Mobile’s innovative team with a “can-do” mindset.</p>
+
+        <h3>Contact</h3>
+        <ul>
+            <li><strong>Email</strong>: robert.hodgkiss@my.utsa.edu</li>
+            <li><strong>Phone</strong>: (210) 960-2749</li>
+            <li><strong>LinkedIn</strong>: <a href="https://linkedin.com/in/robert-hodgkiss">linkedin.com/in/robert-hodgkiss</a></li>
+        </ul>
+
+        <h3>Site Details</h3>
+        <p>This site is built with HTML, CSS, and JavaScript, and hosted on GitHub Pages for free.</p>
+
+        <p>Thank you for visiting!</p>
+    </div>
+
+    <!-- JavaScript for Toggle -->
+    <script>
+        const toggleButton = document.getElementById('toggle-readme');
+        const readmeSection = document.getElementById('readme-section');
+
+        toggleButton.addEventListener('click', () => {
+            readmeSection.classList.toggle('hidden');
+            toggleButton.textContent = readmeSection.classList.contains('hidden') ? 'Show About This Resume' : 'Hide About This Resume';
+        });
+    </script>
 </body>
 </html>
