@@ -9,7 +9,6 @@ This GitHub Pages site includes:
 - Print-friendly layout for physical or digital sharing
 
 ## 🔗 Live Preview
-
 View the site here: [wifiknight45.github.io/vc.github.io](https://wifiknight45.github.io/vc.github.io/)
 
 ## 📄 About Me
@@ -33,16 +32,6 @@ This site is optimized for viewing on desktop and mobile. You can:
 - **Download** the PDF resume directly if included in the repo
 - **Toggle Dark Mode** for better readability
 
-To edit or extend this page:
-- Update `index.html` for layout and content
-- Replace `Robert-Hodgkiss-Resume.pdf` in the repo root to refresh the downloadable PDF
-- Customize styling inside the `<style>` section of the HTML
-
 ## Hosting
-
-Powered by [GitHub Pages](https://pages.github.com/) from the repository: [vc.github.io](https://github.com/wifiknight45/vc.github.io)
-
----
-
-Feel free to fork, clone, or contact me for collaborations or referrals.
+Powered by [GitHub Pages](https://pages.github.com/) 
 
