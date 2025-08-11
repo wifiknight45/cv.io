@@ -1,21 +1,48 @@
-## View My Resume
-- **Live Site**:
-https://wifiknight45.github.io/robert-hodgkiss.github.io/
+# Robert Hodgkiss — Curriculum Vitae 
 
-- **Download PDF**: Open the link above, then use your browser’s “Print to PDF” option (Ctrl+P or Cmd+P) to save a copy.
+Welcome to my resume site, built for recruiters, hiring managers, and networking contacts. I’m a customer service professional with over 3 years of experience across diverse industries—from telecommunications and financial services to tech support and healthcare.
 
-## About Me
-I’m an enthusiastic professional with over 3 years of customer service experience, skilled in delivering timely solutions and building client loyalty. I’m bilingual in English and Spanish, adept at multitasking with multiple systems, and eager to contribute to T-Mobile’s innovative team with a “can-do” mindset.
+This GitHub Pages site includes:
+- A sleek, responsive web version of my resume
+- Dark mode support for accessibility and comfort
+- Downloadable PDF resume
+- Print-friendly layout for physical or digital sharing
 
-## Contact
-- **Email**: wifiknight45@proton.me
-- **Phone**: (210) 960-2749
-- **LinkedIn**: [linkedin.com/in/robert-hodgkiss](https://linkedin.com/in/robert-hodgkiss)
-- **GitHub**: https://github.com/wifiknight45
+## 🔗 Live Preview
 
-## Repository Details
-This site is built with uses HTML, CSS, and JavaScript (i.e. hosted on GitHub Pages). The `index.html` file contains my resume, styled for clarity and professionalism.
+View the site here: [wifiknight45.github.io/vc.github.io](https://wifiknight45.github.io/vc.github.io/)
 
-Thank you for visiting!
+## 📄 About Me
 
-contains: html, css & JavaScript
+- **Name:** Robert Hodgkiss  
+- **Phone:** (210) 960-2749  
+- **Email:** [wifiknight45@proton.me](mailto:wifiknight45@proton.me)  
+- **LinkedIn:** [linkedin.com/in/robert-hodgkiss](https://linkedin.com/in/robert-hodgkiss)
+
+## 💼 Core Skills
+- Customer Support & De-escalation  
+- Proactive Account Management  
+- Technical Troubleshooting  
+- CRM Tools (Salesforce, internal systems)  
+- Multitasking under tight deadlines  
+- Bilingual communication: English & Spanish  
+
+## How to Use
+This site is optimized for viewing on desktop and mobile. You can:
+- **Print** using your browser's print option or the built-in print button
+- **Download** the PDF resume directly if included in the repo
+- **Toggle Dark Mode** for better readability
+
+To edit or extend this page:
+- Update `index.html` for layout and content
+- Replace `Robert-Hodgkiss-Resume.pdf` in the repo root to refresh the downloadable PDF
+- Customize styling inside the `<style>` section of the HTML
+
+## Hosting
+
+Powered by [GitHub Pages](https://pages.github.com/) from the repository: [vc.github.io](https://github.com/wifiknight45/vc.github.io)
+
+---
+
+Feel free to fork, clone, or contact me for collaborations or referrals.
+
