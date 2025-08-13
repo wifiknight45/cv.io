@@ -9,7 +9,7 @@ This GitHub Pages site includes:
 - Print-friendly layout for physical or digital sharing
 
 ## 🔗 Live Preview
-View the site here: [wifiknight45.github.io/vc.github.io](https://wifiknight45.github.io/vc.github.io/)
+View the site here: https://wifiknight45.github.io/cv.io/
 
 ## 📄 About Me
 
