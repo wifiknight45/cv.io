@@ -8,7 +8,6 @@ Aspiring Cybersecurity professional transitioning from customer support, committ
 This GitHub Pages site includes:
 - A sleek, responsive web version of my resume
 - Dark mode support for accessibility and comfort
-- Downloadable PDF resume
 - Print-friendly layout for physical or digital sharing
 
 ## Live Preview
@@ -18,8 +17,8 @@ View the site here: https://wifiknight45.github.io/cv.io/
 
 - **Name:** Robert Hodgkiss  
 - **Phone:** (210) 960-2749  
-- **Email:** [wifiknight45@proton.me](mailto:wifiknight45@proton.me)  
-- **LinkedIn:** [linkedin.com/in/robert-hodgkiss](https://linkedin.com/in/robert-hodgkiss)
+- **Email:** wifiknight45@proton.me
+- **LinkedIn:** linkedin.com/in/robert-hodgkiss
 
 ## Core Skills
 - Customer Support & De-escalation  
@@ -32,9 +31,8 @@ View the site here: https://wifiknight45.github.io/cv.io/
 ## How to Use
 This site is optimized for viewing on desktop and mobile. You can:
 - **Print** using your browser's print option or the built-in print button
-- **Download** the PDF resume directly if included in the repo
 - **Toggle Dark Mode** for better readability
 
 ## Hosting
-Powered by [GitHub Pages](https://pages.github.com/) 
+Powered by GitHub Pages at https://pages.github.com/
 
