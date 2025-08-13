@@ -1,4 +1,6 @@
-# Robert Hodgkiss — Curriculum Vitae 
+# Curriculum Vitae 
+
+### Robert Hodgkiss  
 
 Welcome to my resume site, built for recruiters, hiring managers, and networking contacts.
 
@@ -14,7 +16,6 @@ This GitHub Pages site includes:
 View the site here: https://wifiknight45.github.io/cv.io/
 
 ## About Me
-
 - **Name:** Robert Hodgkiss  
 - **Phone:** (210) 960-2749  
 - **Email:** wifiknight45@proton.me
