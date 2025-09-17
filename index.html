@@ -2,660 +2,224 @@
 <html lang="en" data-theme="auto">
 <head>
   <meta charset="UTF-8" />
-  <title>Robert Hodgkiss — Cybersecurity | Support | Programming</title>
+  <title>Robert Hodgkiss — Cybersecurity Professional | Resume</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Aspiring cybersecurity professional transitioning from customer support. Python, JavaScript, Node.js, .NET. Seeking entry-level SOC analyst, security support, or GRC/identity operations roles." />
+  <meta name="description" content="Robert Hodgkiss - Aspiring cybersecurity professional with expertise in customer support, troubleshooting, and technical solutions. Python, JavaScript, Node.js, .NET experience." />
   <link rel="canonical" href="https://wifiknight45.github.io/cv.io/" />
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Robert Hodgkiss — Cybersecurity | Support | Programming" />
-  <meta property="og:description" content="Aspiring cybersecurity professional with strong troubleshooting and risk screening background. Python, JavaScript, Node.js, .NET." />
-  <meta property="og:type" content="website" />
+  
+  <!-- Enhanced Open Graph -->
+  <meta property="og:title" content="Robert Hodgkiss — Cybersecurity Professional | Resume" />
+  <meta property="og:description" content="Experienced professional transitioning to cybersecurity with strong technical and customer service background. View resume and download PDF." />
+  <meta property="og:type" content="profile" />
   <meta property="og:url" content="https://wifiknight45.github.io/cv.io/" />
-
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📄</text></svg>" />
+  
   <style>
-    /* Minimalist, professional */
     :root {
       --bg: #ffffff;
-      --fg: #111111;
-      --muted: #666666;
-      --border: #e6e6e6;
-      --card: #f7f7f7;
-      --link: #111111; /* rely on underline for affordance */
-      --focus: #000000;
-
-      /* Repo tree */
-      --code-bg: #f6f8fa;
-      --dir: #6a5acd;
-      --file: #008080;
+      --fg: #1a1a1a;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --card: #f9fafb;
+      --accent: #3b82f6;
+      --accent-hover: #2563eb;
+      --shadow: rgba(0, 0, 0, 0.1);
+      --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     }
+
     @media (prefers-color-scheme: dark) {
       :root {
-        --bg: #0b0b0b;
-        --fg: #e8e8e8;
-        --muted: #a0a0a0;
-        --border: #2a2a2a;
-        --card: #121212;
-        --link: #e8e8e8;
-        --focus: #ffffff;
-
-        --code-bg: #0e1116;
-        --dir: #a08bff;
-        --file: #22c1b5;
+        --bg: #0f172a;
+        --fg: #f1f5f9;
+        --muted: #94a3b8;
+        --border: #334155;
+        --card: #1e293b;
+        --accent: #60a5fa;
+        --accent-hover: #3b82f6;
+        --shadow: rgba(0, 0, 0, 0.3);
       }
     }
-    /* Explicit theme overrides */
-    html[data-theme="light"] {
-      --bg: #ffffff; --fg: #111111; --muted: #666666; --border: #e6e6e6; --card: #f7f7f7; --link: #111111; --focus:#000;
-      --code-bg: #f6f8fa; --dir:#6a5acd; --file:#008080;
-    }
-    html[data-theme="dark"] {
-      --bg: #0b0b0b; --fg: #e8e8e8; --muted: #a0a0a0; --border: #2a2a2a; --card: #121212; --link: #e8e8e8; --focus:#fff;
-      --code-bg: #0e1116; --dir:#a08bff; --file:#22c1b5;
-    }
+
+    * { box-sizing: border-box; }
 
     html, body {
       margin: 0;
       padding: 0;
       background: var(--bg);
       color: var(--fg);
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+      font-family: var(--font-sans);
       font-size: 16px;
       line-height: 1.6;
-      text-rendering: optimizeLegibility;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
     }
 
     .container {
-      max-width: 860px;
+      max-width: 800px;
       margin: 0 auto;
-      padding: 40px 20px 64px;
+      padding: 2rem;
     }
 
-    header { margin-bottom: 18px; }
-    h1 {
-      font-size: clamp(28px, 3.2vw, 36px);
-      font-weight: 600;
-      letter-spacing: -0.01em;
-      margin: 0 0 4px;
+    .header {
+      text-align: center;
+      margin-bottom: 3rem;
+      padding-bottom: 2rem;
+      border-bottom: 2px solid var(--border);
     }
-    .contact, .actions {
+
+    .name {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin: 0 0 0.5rem 0;
+      color: var(--fg);
+    }
+
+    .title {
+      font-size: 1.25rem;
+      color: var(--accent);
+      margin: 0 0 1.5rem 0;
+      font-weight: 500;
+    }
+
+    .controls {
+      position: fixed;
+      top: 1.5rem;
+      right: 1.5rem;
       display: flex;
-      flex-wrap: wrap;
-      gap: 10px 16px;
-      align-items: center;
-      margin: 10px 0 10px;
-      color: var(--muted);
-      font-size: 0.97rem;
-    }
-    a {
-      color: var(--link);
-      text-decoration: underline;
-      text-underline-offset: 2px;
-      text-decoration-thickness: 1px;
-    }
-    a:focus-visible, button:focus-visible {
-      outline: 2px solid var(--focus);
-      outline-offset: 2px;
-      border-radius: 4px;
+      gap: 0.5rem;
+      z-index: 100;
     }
 
     .btn {
-      appearance: none;
-      background: transparent;
-      color: var(--fg);
-      border: 1px solid var(--border);
-      padding: 8px 12px;
-      border-radius: 8px;
-      cursor: pointer;
-      font-weight: 600;
-      letter-spacing: 0.01em;
-    }
-    .btn:hover { background: var(--card); }
-    .btn.primary {
-      background: var(--fg);
-      color: var(--bg);
-      border-color: var(--fg);
-    }
-    .btn.primary:hover { filter: brightness(0.92); }
-
-    section {
-      padding: 18px 16px;
       background: var(--card);
       border: 1px solid var(--border);
-      border-radius: 12px;
-      margin: 14px 0;
+      color: var(--fg);
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 0.875rem;
+      font-weight: 500;
+      transition: all 0.2s ease;
     }
 
-    h2 {
-      margin: 0 0 8px;
-      font-size: 1.12rem;
+    .btn:hover {
+      background: var(--accent);
+      color: white;
+      border-color: var(--accent);
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: white;
+      border-color: var(--accent);
+    }
+
+    .section {
+      margin-bottom: 3rem;
+    }
+
+    .section-title {
+      font-size: 1.5rem;
       font-weight: 700;
-      letter-spacing: 0.005em;
-    }
-    h3 {
-      margin: 0 0 4px;
-      font-size: 1rem;
-      font-weight: 600;
-    }
-    .meta {
-      font-size: 0.92rem;
-      color: var(--muted);
-      margin-bottom: 6px;
-    }
-    .item { margin: 10px 0 14px; }
-    ul { margin: 8px 0 0 18px; padding: 0; }
-    li { margin: 6px 0; }
-
-    footer {
-      margin-top: 26px;
-      color: var(--muted);
-      font-size: 0.9rem;
-      display: flex;
-      gap: 16px;
-      flex-wrap: wrap;
-      align-items: center;
-    }
-
-    /* Repo structure */
-    .repo-toolbar {
-      display: flex;
-      gap: 10px;
-      align-items: center;
-      margin: 10px 0 8px;
-      flex-wrap: wrap;
-    }
-    .repo-status {
-      color: var(--muted);
-      font-size: 0.92rem;
-    }
-    .tree-wrap, .mermaid-wrap {
-      background: var(--code-bg);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 12px 14px;
-      overflow: auto;
-    }
-    .tree-wrap { max-height: 480px; }
-    .mermaid-wrap { max-height: 520px; }
-
-    .file-tree {
-      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
-      font-size: 0.95rem;
-      line-height: 1.5;
-      list-style: none;
-      padding-left: 0;
-      margin: 0;
-    }
-    .file-tree li {
+      margin: 0 0 1.5rem 0;
+      color: var(--fg);
       position: relative;
-      margin: 2px 0;
-      padding-left: 22px;
-      white-space: nowrap;
+      padding-bottom: 0.5rem;
     }
-    .file-tree li::before {
-      content: "";
-      position: absolute;
-      left: 9px;
-      top: 0.95em;
-      width: 8px;
-      height: 1px;
-      background: var(--border);
-    }
-    .file-tree a { text-decoration: none; color: var(--link); }
-    .node-dir > .label { color: var(--dir); font-weight: 600; }
-    .node-file > .label { color: var(--file); }
-    .twisty { cursor: pointer; user-select: none; margin-right: 6px; font-weight: 600; }
-    .hidden { display: none !important; }
 
-    /* Optional: style for repo links in Projects */
-    .repo-link { text-decoration: none; font-weight: 600; }
-    .repo-link:hover { text-decoration: underline; }
-    .visually-hidden { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; border: 0; clip: rect(0 0 0 0); overflow: hidden; }
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 40px;
+      height: 2px;
+      background: var(--accent);
+    }
+
+    .summary {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: var(--muted);
+      background: var(--card);
+      padding: 2rem;
+      border-radius: 8px;
+      border-left: 4px solid var(--accent);
+    }
+
+    .contact-info {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.5rem;
+    }
+
+    .contact-item {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: color 0.2s ease;
+    }
+
+    .contact-item:hover {
+      color: var(--accent);
+    }
+
     @media print {
-      .actions { display: none !important; }
-      section { background: #fff; border-color: #ddd; }
-      a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 0.9em; color: #444; }
-      body { color: #000; }
+      .controls { display: none !important; }
+      body { background: white !important; color: black !important; }
     }
   </style>
-
-  <!-- Structured data -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"Person",
-    "name":"Robert Hodgkiss",
-    "email":"mailto:wifiknight45@proton.me",
-    "telephone":"+1-210-960-2749",
-    "sameAs":["https://linkedin.com/in/robert-hodgkiss","https://github.com/wifiknight45"],
-    "jobTitle":"Aspiring Cybersecurity Professional",
-    "url":"https://wifiknight45.github.io/cv.io/"
-  }
-  </script>
 </head>
-<body>
-  <div class="container">
-    <header>
-      <h1>Robert Hodgkiss</h1>
-      <div class="contact" aria-label="Contact information">
-        <a href="tel:+12109602749" rel="nofollow">(+1) 210-960-2749</a>
-        <a href="mailto:wifiknight45@proton.me">Email: wifiknight45@proton.me</a>
-        <a href="https://wifiknight45.github.io/cv.io/" target="_blank" rel="noopener noreferrer">Resume: wifiknight45.github.io/cv.io/</a>
-        <a href="https://linkedin.com/in/robert-hodgkiss" target="_blank" rel="noopener noreferrer">LinkedIn: linkedin.com/in/robert-hodgkiss</a>
-        <a href="https://github.com/wifiknight45" target="_blank" rel="noopener noreferrer">GitHub: github.com/wifiknight45</a>
-      </div>
 
-      <div class="actions" role="toolbar" aria-label="Actions">
-        <button class="btn" onclick="window.print()">Print</button>
-        <button id="themeToggle" class="btn" aria-pressed="false" aria-label="Toggle theme">Toggle dark mode</button>
+<body>
+  <div class="controls">
+    <button id="downloadPDF" class="btn btn-primary">📄 Download PDF</button>
+    <button id="themeToggle" class="btn">🌓 Theme</button>
+  </div>
+
+  <div class="container">
+    <header class="header">
+      <h1 class="name">Robert Hodgkiss</h1>
+      <p class="title">Cybersecurity Professional | Customer Support Specialist</p>
+      <div class="contact-info">
+        <a href="tel:+12109602749" class="contact-item">📞 (210) 960-2749</a>
+        <a href="mailto:wifiknight45@proton.me" class="contact-item">✉️ wifiknight45@proton.me</a>
+        <a href="https://linkedin.com/in/robert-hodgkiss" class="contact-item" target="_blank">🔗 LinkedIn</a>
       </div>
     </header>
 
-    <section aria-labelledby="summary-heading">
-      <h2 id="summary-heading">Professional summary</h2>
-      <p>
-        Aspiring Cybersecurity professional transitioning from customer support, focused on protecting people and their data. Developing programming skills in Python, JavaScript, Node.js, and .NET. Enjoys finding novel solutions to problems via software/programming. Strengths include hands‑on troubleshooting, technical triage, risk screening, and clear, compliant documentation. Experienced in coaching users on secure authentication and fraud‑prevention best practices. Calm under pressure and ready to contribute in an entry‑level SOC Analyst, Security Support, or GRC/Identity Operations role.
-      </p>
-    </section>
-
-    <!-- Auto-updating repo structure (HTML tree + Mermaid diagram) -->
-    <section aria-labelledby="repo-structure-heading">
-      <h2 id="repo-structure-heading">Repository structure (auto‑updated)</h2>
-
-      <div class="repo-toolbar" role="toolbar" aria-label="Repository view controls">
-        <button id="viewTreeBtn" class="btn" aria-pressed="true">Tree view</button>
-        <button id="viewMermaidBtn" class="btn" aria-pressed="false">Mermaid diagram</button>
-        <span id="repoStatus" class="repo-status" aria-live="polite">Loading latest structure…</span>
-      </div>
-
-      <div id="treeWrap" class="tree-wrap">
-        <ul id="fileTree" class="file-tree" aria-label="Repository file tree"></ul>
-      </div>
-
-      <div id="mermaidWrap" class="mermaid-wrap hidden" aria-hidden="true">
-        <pre id="mermaidBox" class="mermaid">graph TD
-subgraph Loading
-A[Fetching repository…]
-end</pre>
-      </div>
-    </section>
-
-    <section aria-labelledby="education-heading">
-      <h2 id="education-heading">Education</h2>
-      <div class="item">
-        <h3>University of California, Santa Cruz — Independent Study in Linguistics and Foreign Languages</h3>
-        <div class="meta">2003 – 2005</div>
-      </div>
-    </section>
-
-    <section aria-labelledby="skills-heading">
-      <h2 id="skills-heading">Technical skills</h2>
-      <ul>
-        <li><strong>Programming:</strong> Python, JavaScript, CSS, HTML, Node.js, .NET</li>
-        <li><strong>Security:</strong> Secure authentication/MFA coaching, fraud‑prevention education, risk screening, data privacy</li>
-        <li><strong>Tools:</strong> Atlassian, Confluence, CRM platforms, Git, GitHub, JIRA, SharePoint, ticketing workflows</li>
-        <li><strong>Networking:</strong> Device connectivity troubleshooting, network performance testing and root-cause analysis</li>
-        <li><strong>Languages:</strong> English, French, Spanish</li>
-      </ul>
-    </section>
-
-    <section aria-labelledby="certs-heading">
-      <h2 id="certs-heading">Certifications</h2>
-      <ul>
-        <li>Learning Threat Intelligence — LinkedIn Learning, Nov 2024</li>
-        <li>Penetration Testing Essential — LinkedIn Learning, Nov 2024</li>
-        <li>Certificate of Spanish Language Proficiency — State of California, Jul 2017</li>
-      </ul>
-    </section>
-
-    <section aria-labelledby="projects-heading">
-      <h2 id="projects-heading">Projects</h2>
-      <ul>
-        <li>
-          <strong>Automation:</strong> Developed zBc_3.0v1 (Billing Cycle Script), T‑Mobile, May 2025
-          <a href="https://github.com/wifiknight45/zBc" target="_blank" rel="noopener noreferrer" class="repo-link">repository</a>
-          <ul>
-            <li><strong>Purpose:</strong> Calculate critical billing milestones with a configurable password‑based key derivation using PBKDF2‑HMAC‑SHA256 for secure data handling.</li>
-            <li><strong>Impact:</strong> Reduced manual effort, increased accuracy, and accelerated customer issue resolution.</li>
-            <li><strong>Currently in development:</strong> Website and app for a minimum viable product. Python core logic completed; focusing on frontend website, then containerization before an app store launch.</li>
-          </ul>
-        </li>
-
-        <li>
-          <strong>RSI_314:</strong> Python LSTM model using RSI with financial data from PostgreSQL to estimate potential trade profitability.
-          <a href="https://github.com/wifiknight45/RSI_314" target="_blank" rel="noopener noreferrer" class="repo-link">repository</a>
-        </li>
-      </ul>
-    </section>
-
-    <section aria-labelledby="experience-heading">
-      <h2 id="experience-heading">Professional experience</h2>
-
-      <div class="item">
-        <h3>T‑Mobile — Account Associate</h3>
-        <div class="meta">Springfield, MO • May 2025 – Aug 2025</div>
-        <ul>
-          <li><strong>Customer care:</strong> Resolved account issues, service concerns, and technical inquiries with precision and empathy.</li>
-          <li><strong>Troubleshooting:</strong> Diagnosed device connectivity, network performance, and account security concerns for swift resolution.</li>
-          <li><strong>Systems/CRM:</strong> Managed accounts, billing adjustments, and feature configuration with strong data integrity and privacy.</li>
-          <li><strong>Security education:</strong> Coached customers on account protection, secure authentication, and fraud‑prevention best practices.</li>
-          <li><strong>Automation:</strong> Built a Python script to calculate billing milestones for post‑paid customers.</li>
-        </ul>
-      </div>
-
-      <div class="item">
-        <h3>Wells Fargo — Senior Customer Service Representative</h3>
-        <div class="meta">San Antonio, TX • Jan 2025 – Mar 2025</div>
-        <ul>
-          <li><strong>Risk controls:</strong> Submitted business account applications and ran risk screens to mitigate potential loss.</li>
-          <li><strong>Data review:</strong> Verified application data and business filings for comprehensive evaluation.</li>
-          <li><strong>Stakeholder updates:</strong> Performed status checks and communicated decisions professionally.</li>
-          <li><strong>Throughput:</strong> Multitasked across SharePoint and Excel to maintain accuracy under tight deadlines.</li>
-        </ul>
-      </div>
-
-      <div class="item">
-        <h3>TaskUs, Inc. — Customer Service Specialist</h3>
-        <div class="meta">New Braunfels, TX • Sep 2024 – Nov 2024</div>
-        <ul>
-          <li><strong>Resolution:</strong> Delivered swift resolutions to urgent customer concerns while meeting quality and efficiency standards.</li>
-          <li><strong>Documentation:</strong> Maintained detailed records across platforms to ensure policy adherence.</li>
-          <li><strong>Performance:</strong> Consistently exceeded performance goals across diverse customer needs.</li>
-        </ul>
-      </div>
-
-      <div class="item">
-        <h3>Health and well‑being career break</h3>
-        <div class="meta">Apr 2024 – Aug 2024</div>
-        <ul>
-          <li><strong>Context:</strong> Short medical hiatus for surgery and recovery.</li>
-        </ul>
-      </div>
-    </section>
-
-    <section aria-labelledby="additional-heading">
-      <h2 id="additional-heading">Additional experience</h2>
-
-      <div class="item">
-        <h3>Wal‑Mart, Inc. — Associate</h3>
-        <div class="meta">Springfield, MO • Jan 2024 – Apr 2024</div>
-        <ul>
-          <li><strong>Operations:</strong> Resolved stock inquiries; maintained efficiency in a fast‑paced environment.</li>
-        </ul>
-      </div>
-
-      <div class="item">
-        <h3>Charter Communications (Spectrum) — Sales Support Activation Specialist I</h3>
-        <div class="meta">San Antonio, TX • Aug 2021 – Sep 2021</div>
-        <ul>
-          <li><strong>Service/ticketing:</strong> Resolved internet issues in English/Spanish; managed activation tickets offline.</li>
-        </ul>
-      </div>
-
-      <div class="item">
-        <h3>Telelanguage — Customer Service Specialist</h3>
-        <div class="meta">Remote • Aug 2020 – Jun 2021</div>
-        <ul>
-          <li><strong>Coordination:</strong> Scheduled interpreters; maintained healthcare records to quality standards.</li>
-        </ul>
-      </div>
-
-      <div class="item">
-        <h3>State of California, Health Benefit Exchange — Program Technician II</h3>
-        <div class="meta">Fresno, CA • Oct 2016 – Feb 2019</div>
-        <ul>
-          <li><strong>Compliance/docs:</strong> Processed applications, verified eligibility, resolved complaints, and authored knowledge‑base articles.</li>
-        </ul>
-      </div>
-    </section>
-
-    <footer>
-      <span>© Robert Hodgkiss</span>
-    </footer>
+    <main>
+      <section class="section">
+        <h2 class="section-title">Professional Summary</h2>
+        <div class="summary">
+          Aspiring Cybersecurity professional transitioning from customer support, committed to safeguarding people and their data. 
+          Building skills in Python, JavaScript, Node.js, and .NET; crafted a Python script to automate critical billing date 
+          calculations for a major wireless provider. Strong in troubleshooting, technical triage, risk screening, and precise, 
+          compliant documentation. Experienced in coaching users on secure authentication and fraud‑prevention best practices. 
+          Steady under pressure, ready to add value in an entry‑level SOC Analyst, Security Support, or GRC/Identity Operations role.
+        </div>
+      </section>
+    </main>
   </div>
 
   <script>
-    // Theme toggle with persistence
-    (function() {
-      const root = document.documentElement;
-      const btn = document.getElementById('themeToggle');
-      const saved = localStorage.getItem('theme'); // 'light' | 'dark' | null
-
-      function apply(theme) {
-        if (theme === 'light' || theme === 'dark') {
-          root.setAttribute('data-theme', theme);
-          btn.setAttribute('aria-pressed', theme === 'dark');
-          btn.textContent = theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode';
-        } else {
-          root.setAttribute('data-theme', 'auto');
-          const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-          btn.setAttribute('aria-pressed', prefersDark);
-          btn.textContent = prefersDark ? 'Switch to light mode' : 'Switch to dark mode';
-        }
-        // Signal theme change for other scripts
-        document.dispatchEvent(new CustomEvent('themechange', { detail: { theme: theme || 'auto' } }));
-      }
-
-      apply(saved);
-
-      btn.addEventListener('click', () => {
-        const current = root.getAttribute('data-theme');
-        const next = current === 'dark' ? 'light' : 'dark';
-        localStorage.setItem('theme', next);
-        apply(next);
-      });
-
-      // Update label if system theme changes while in 'auto'
-      if (!saved && window.matchMedia) {
-        const mq = window.matchMedia('(prefers-color-scheme: dark)');
-        mq.addEventListener('change', () => apply(null));
-      }
-    })();
-  </script>
-
-  <!-- Mermaid + GitHub API powered repo tree -->
-  <script type="module">
-    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
-
-    // Configure Mermaid; pick theme based on current mode
-    function isDarkMode() {
-      const explicit = document.documentElement.getAttribute('data-theme');
-      const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-      return explicit === 'dark' || (explicit !== 'light' && prefersDark);
-    }
-    mermaid.initialize({ startOnLoad: false, theme: isDarkMode() ? 'dark' : 'default' });
-    document.addEventListener('themechange', () => {
-      mermaid.initialize({ startOnLoad: false, theme: isDarkMode() ? 'dark' : 'default' });
-      // Re-render if mermaid view is active
-      if (!document.getElementById('mermaidWrap').classList.contains('hidden')) {
-        mermaid.run({ nodes: [document.getElementById('mermaidBox')] }).catch(() => {});
-      }
+    // PDF Download
+    document.getElementById('downloadPDF').addEventListener('click', () => {
+      window.print();
     });
 
-    const owner = 'wifiknight45';
-    const repo  = 'cv.io';
-    const statusEl = document.getElementById('repoStatus');
-    const treeUl = document.getElementById('fileTree');
-    const mermaidBox = document.getElementById('mermaidBox');
-    const treeWrap = document.getElementById('treeWrap');
-    const mermaidWrap = document.getElementById('mermaidWrap');
-    const viewTreeBtn = document.getElementById('viewTreeBtn');
-    const viewMermaidBtn = document.getElementById('viewMermaidBtn');
-
-    viewTreeBtn.addEventListener('click', () => {
-      treeWrap.classList.remove('hidden');
-      treeWrap.setAttribute('aria-hidden', 'false');
-      mermaidWrap.classList.add('hidden');
-      mermaidWrap.setAttribute('aria-hidden', 'true');
-      viewTreeBtn.setAttribute('aria-pressed', 'true');
-      viewMermaidBtn.setAttribute('aria-pressed', 'false');
+    // Theme Toggle
+    const themeToggle = document.getElementById('themeToggle');
+    const html = document.documentElement;
+    
+    themeToggle.addEventListener('click', () => {
+      const currentTheme = html.getAttribute('data-theme') || 'auto';
+      const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+      html.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
     });
-    viewMermaidBtn.addEventListener('click', async () => {
-      treeWrap.classList.add('hidden');
-      treeWrap.setAttribute('aria-hidden', 'true');
-      mermaidWrap.classList.remove('hidden');
-      mermaidWrap.setAttribute('aria-hidden', 'false');
-      viewTreeBtn.setAttribute('aria-pressed', 'false');
-      viewMermaidBtn.setAttribute('aria-pressed', 'true');
-      try { await mermaid.run({ nodes: [mermaidBox] }); } catch {}
-    });
-
-    async function fetchJSON(url) {
-      const r = await fetch(url, { headers: { 'Accept': 'application/vnd.github+json' } });
-      if (!r.ok) throw new Error(`HTTP ${r.status}`);
-      return r.json();
-    }
-
-    // Build a hierarchical tree from Git paths
-    function buildTree(entries) {
-      const root = { name: repo, type: 'tree', children: new Map(), path: '' };
-      for (const item of entries) {
-        const parts = item.path.split('/');
-        let cursor = root;
-        for (let i = 0; i < parts.length; i++) {
-          const part = parts[i];
-          const isLast = i === parts.length - 1;
-          if (isLast) {
-            if (item.type === 'tree') {
-              if (!cursor.children.has(part)) {
-                cursor.children.set(part, { name: part, type: 'tree', children: new Map(), path: parts.join('/') });
-              }
-            } else {
-              cursor.children.set(part, { name: part, type: 'blob', path: parts.join('/') });
-            }
-          } else {
-            if (!cursor.children.has(part)) {
-              cursor.children.set(part, { name: part, type: 'tree', children: new Map(), path: parts.slice(0, i + 1).join('/') });
-            }
-            cursor = cursor.children.get(part);
-          }
-        }
-      }
-      return root;
-    }
-
-    function escapeHtml(s) {
-      return s.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-    }
-
-    function renderTreeNode(node, branch) {
-      const li = document.createElement('li');
-      if (node.type === 'tree') {
-        li.className = 'node-dir';
-        const summary = document.createElement('span');
-        summary.className = 'twisty';
-        summary.setAttribute('role', 'button');
-        summary.setAttribute('aria-expanded', 'true');
-        summary.textContent = '▾';
-        const label = document.createElement('span');
-        label.className = 'label';
-        label.textContent = node.name;
-
-        const ul = document.createElement('ul');
-        ul.className = 'file-tree';
-        const kids = Array.from(node.children.values()).sort((a, b) => {
-          // Directories first, then files, then alpha
-          if (a.type !== b.type) return a.type === 'tree' ? -1 : 1;
-          return a.name.localeCompare(b.name);
-        });
-        for (const child of kids) ul.appendChild(renderTreeNode(child, branch));
-
-        summary.addEventListener('click', () => {
-          const expanded = summary.getAttribute('aria-expanded') === 'true';
-          summary.setAttribute('aria-expanded', String(!expanded));
-          summary.textContent = expanded ? '▸' : '▾';
-          ul.classList.toggle('hidden', expanded);
-        });
-
-        li.appendChild(summary);
-        li.appendChild(label);
-        li.appendChild(ul);
-      } else {
-        li.className = 'node-file';
-        const a = document.createElement('a');
-        a.className = 'label';
-        a.href = `https://github.com/${owner}/${repo}/blob/${encodeURIComponent(branch)}/${node.path}`;
-        a.target = '_blank';
-        a.rel = 'noopener noreferrer';
-        a.textContent = node.name;
-        li.appendChild(a);
-      }
-      return li;
-    }
-
-    function renderTree(rootNode, branch) {
-      treeUl.innerHTML = '';
-      const top = renderTreeNode(rootNode, branch);
-      // For the root, we don't want to show the root label alone; show its children
-      const children = top.querySelector('ul');
-      if (children) {
-        treeUl.append(...children.childNodes);
-      }
-    }
-
-    function toMermaidId(path) {
-      return 'n_' + path.replace(/[^a-zA-Z0-9_]/g, '_');
-    }
-
-    function buildMermaid(rootNode) {
-      const lines = ['graph TD'];
-      function walk(node, parentPath) {
-        const id = toMermaidId(node.path || node.name || '');
-        const label = escapeHtml(node.name || repo);
-        if (node.type === 'tree') {
-          lines.push(`${id}(["${label}/"]):::dir`);
-          for (const child of Array.from(node.children.values())) {
-            const cid = toMermaidId(child.path || child.name);
-            const clabel = escapeHtml(child.name);
-            if (child.type === 'tree') {
-              lines.push(`${cid}(["${clabel}/"]):::dir`);
-            } else {
-              lines.push(`${cid}["${clabel}"]:::file`);
-            }
-            lines.push(`${id} --> ${cid}`);
-            if (child.type === 'tree') walk(child, node.path);
-          }
-        }
-      }
-      walk(rootNode, '');
-      lines.push('classDef dir fill:#e9e9ff,stroke:#b7b7ff,color:#333;');
-      lines.push('classDef file fill:#d9f4f1,stroke:#77ddd2,color:#333;');
-      return lines.join('\n');
-    }
-
-    async function loadAndRender() {
-      try {
-        statusEl.textContent = 'Fetching repository metadata…';
-        const repoInfo = await fetchJSON(`https://api.github.com/repos/${owner}/${repo}`);
-        const branch = repoInfo.default_branch || 'main';
-
-        statusEl.textContent = `Loading ${owner}/${repo} @ ${branch}…`;
-        const tree = await fetchJSON(`https://api.github.com/repos/${owner}/${repo}/git/trees/${encodeURIComponent(branch)}?recursive=1`);
-
-        const entries = (tree.tree || [])
-          .filter(e => e.type === 'tree' || e.type === 'blob')
-          .filter(e => !e.path.startsWith('.git')); // ignore git metadata just in case
-
-        const rootNode = buildTree(entries);
-
-        // Render HTML tree
-        renderTree(rootNode, branch);
-
-        // Render Mermaid graph
-        mermaidBox.textContent = buildMermaid(rootNode);
-        await mermaid.run({ nodes: [mermaidBox] });
-
-        statusEl.textContent = 'Repository structure loaded.';
-      } catch (err) {
-        console.error(err);
-        statusEl.textContent = 'Failed to load repository structure.';
-        treeUl.innerHTML = '<li class="node-file"><span class="label">Error loading repository data.</span></li>';
-      }
-    }
-
-    loadAndRender();
   </script>
 </body>
 </html>
