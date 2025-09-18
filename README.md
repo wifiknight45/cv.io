@@ -2,38 +2,74 @@
 
 ### Robert Hodgkiss  
 
-Welcome to my resume site, built for recruiters, hiring managers, and networking contacts.
 
-Summary
-Cybersecurity professional transitioning from customer support, committed to safeguarding people and their data. Building skills in Python, SQL, and Rust. Strong in troubleshooting, technical triage, risk screening, and precise, compliant documentation. Experienced in coaching users on secure authentication and fraud‑prevention best practices. Steady under pressure, ready to add value in an entry‑level SOC Analyst, Security Support, or GRC/Identity Operations role.
+**Aspiring Cybersecurity Professional | Python Developer | Customer Support Specialist**
 
-This GitHub Pages site includes:
-- A sleek, responsive web version of my resume
-- Dark mode support for accessibility and comfort
-- Print-friendly layout for physical or digital sharing
+📧 wifiknight45@proton.me | 🔗 [LinkedIn](https://linkedin.com/in/robert-hodgkiss) | 🌐 [Portfolio](https://wifiknight45.github.io/cv.io/)
 
-## Live Preview
-View the site here: https://wifiknight45.github.io/cv.io/
+---
 
-## About Me
-- **Name:** Robert Hodgkiss  
-- **Phone:** (210) 960-2749  
-- **Email:** wifiknight45@proton.me
-- **LinkedIn:** linkedin.com/in/robert-hodgkiss
+## About
 
-## Core Skills
-- Customer Support & De-escalation  
-- Proactive Account Management  
-- Technical Troubleshooting  
-- CRM Tools (SharePoint, Citrix, Salesforce, Atlassian, JIRA, Azure, internal systems)  
-- Multitasking under tight deadlines  
-- Mulitligual communication: English | French | Spanish 
+Customer support professional transitioning to cybersecurity with a passion for protecting people and their data. Developing technical expertise in Python automation, security tools, and risk assessment while leveraging strong troubleshooting and communication skills from support background.
 
-## How to Use
-This site is optimized for viewing on desktop and mobile. You can:
-- **Print** using your browser's print option or the built-in print button
-- **Toggle Dark Mode** for better readability
+## Technical Skills
 
-## Hosting
-Powered by GitHub Pages at https://pages.github.com/
+**Programming & Development**
+- Python (Automation, Security Scripting, Data Analysis)
+- JavaScript & Node.js
+- .NET Framework
+- SQL & Database Management
 
+**Security & Operations**
+- Risk Screening & Assessment
+- Fraud Prevention & Education
+- Vulnerability Analysis
+- Security Tool Development
+
+**Systems & Tools**
+- Linux/Windows Administration
+- Git Version Control
+- Network Troubleshooting
+- Incident Documentation
+
+## Key Projects
+
+### 🔐 Security Automation Tools
+- **Secure Billing Cycle Calculator**: Automated financial calculations with security-first design
+- **Risk Assessment Scripts**: Python tools for identifying potential security threats
+- **Support Ticket Analysis**: Automated pattern recognition for fraud prevention
+
+### 🛡️ Security Learning Labs
+- Hands-on vulnerability assessment practice
+- Network security monitoring simulations
+- Penetration testing methodology studies
+
+## Professional Experience
+
+**Customer Support Specialist** → **Cybersecurity Transition**
+- Advanced troubleshooting and problem resolution
+- Risk screening and fraud prevention education
+- Cross-functional collaboration and incident escalation
+- Technical documentation and process improvement
+
+## Target Roles
+
+Seeking entry-level positions in:
+- **SOC Analyst** - Monitoring and incident response
+- **Security Support** - Technical assistance and threat mitigation  
+- **GRC/Identity Operations** - Compliance and access management
+
+## Certifications & Learning
+Learning Threat Intelligence — LinkedIn Learning, Nov 2024
+Penetration Testing Essential — LinkedIn Learning, Nov 2024
+Certificate of Spanish Language Proficiency — State of California, Jul 2017
+
+
+## Connect
+
+Open to cybersecurity opportunities, technical collaborations, and industry mentorship.
+
+---
+
+*"Protecting people and their data through code, analysis, and proactive security measures."*
